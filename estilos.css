@@ -1,7 +1,184 @@
+/* *{border: 1px solid red} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --fuente-principal: 'Inter', monospace;
+    --color-principal: #000000;
+    --color-secundario: hsl(216, 2%, 60%);
+    --color-terciario: hsl(214, 11%, 42%);
+    --color-morado: hsl(266, 63%, 39%);
+    --fuente-tamano-pequeno: 15px;
+    --fuente-tamano-mediano: 18px;
+    --fuente-tamano-grande: 24px;
+    --fuente-tamano-xxl: 40px;
+    --padding-pequeno: 5px;
+    --padding-mediano: 10px;
+    --padding-grande: 20px; 
+    --dimension-redondeado: 5px;
+    --margin: 20px;
+}
+
+
 /*Estilos para la barra de navegación*/
+header {
+    font-family: var(--fuente-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-pequeno) var(--padding-mediano);
+    box-shadow: 0px 0px 10px hsl(0, 0%, 80%); 
+}
+
+header h1 {
+    color: var(--color-principal);
+    font-size: var(--fuente-tamano-grande);
+    font-weight: 400;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--fuente-tamano-pequeno);
+    /* font-weight: 400; */
+}
+
+header ul li a:hover {
+    font-size: var(--fuente-tamano-mediano);
+    font-weight: bolder;
+}
+
+header div {
+    height: 40px;
+    width: 120px;
+    border-radius: var(--dimension-redondeado);
+    background-color: var(--color-morado);
+    text-align: center;
+    align-content: center;
+}
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+    font-size: var(--fuente-tamano-pequeno);
+    display: block;
+    width: auto;
+    height: 100%;
+    line-height: 40px;
+}
+
+.contacto:hover {
+    font-weight: bolder;
+    background: hsl(266, 71%, 54%);
+    cursor: pointer;
+}
 
 
 /*Estilos para la intro y customers*/
+
+/*--------------INTRO--------------*/
+
+.intro {
+    padding: var(--padding-grande) 0px;
+    font-family: var(--fuente-principal);
+}
+
+.intro .intro-contenedor {
+    padding-top: 100px; 
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro .intro-contenedor .texto {
+    padding-left: 150px;
+}
+
+.intro .intro-contenedor .texto-arriba {
+    padding-bottom: var(--padding-grande); 
+}
+
+.intro .intro-contenedor .texto-principal {
+    margin-bottom: 5px; 
+    margin-top: 0px;
+}
+
+.intro .intro-contenedor .texto-principal span {
+    margin-bottom: 5px; 
+    margin-top: 0px;
+}
+
+.intro .intro-contenedor .texto-principal {
+    font-size: var(--fuente-tamano-xxl);
+    color: var(--color-principal);
+    font-weight: 200;
+}
+.intro .intro-contenedor .texto-principal .texto-color {
+    color: var(--color-morado);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.intro .intro-contenedor .texto-principal .texto-negrita {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.intro .intro-contenedor .texto-abajo {
+    padding-bottom: var(--padding-grande); 
+}
+
+.intro .intro-contenedor .texto-abajo p {
+    color: var(--color-terciario);
+}
+
+.intro .intro-contenedor .boton {
+    margin-top: var(--margin);
+    padding: var(--padding-pequeno) var(--padding-grande);
+    height: 45px;
+    width: 160px;
+    background-color: hsl(224, 76%, 56%);
+    border-radius: var(--dimension-redondeado);
+    text-align: center;
+    align-content: center;
+}
+
+.intro .intro-contenedor .boton {
+    background-color: hsl(224, 76%, 66%);
+    cursor: pointer;
+}
+
+.intro .intro-contenedor .boton a{
+    display: flow-root;
+    line-height: 40px;
+    font-size: var(--fuente-tamano-pequeno);
+    color: white;
+    text-decoration: none;
+}
+
+.intro .intro-contenedor .boton:hover {
+    background-color: hsl(224, 76%, 46%);
+    font-weight: bold;
+}
+
+.intro .intro-contenedor .imagen {
+    width: 600px;
+    height: 400px;
+    padding-right: 150px;
+}
+
+.intro .intro-contenedor .imagen img {
+    width: auto;
+    height: 100%;
+}
+
 
 
 /*Estilos para developmentApproach*/
