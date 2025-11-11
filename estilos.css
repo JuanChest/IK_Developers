@@ -179,6 +179,187 @@ header div {
     height: 100%;
 }
 
+/*--------------CUSTOMERS--------------*/
+
+.customers {
+    padding-top: 200px;
+    font-family: var(--fuente-principal);
+}
+
+/*...... Texto ......*/
+
+.customers .customers-texto {
+    text-align: center;
+}
+
+.customers .customers-texto .texto-arriba {
+    font-size: var(--fuente-tamano-xxl);
+    padding-bottom: var(--padding-grande);
+}
+
+.customers .customers-texto .texto-arriba p {
+    margin-bottom: 15px; 
+    margin-top: 0px;
+}
+
+.customers .customers-texto .texto-arriba .texto-negrita{
+    font-weight: bold;
+}
+
+.customers .customers-texto .texto-abajo {
+    color: var(--color-terciario);
+    font-size: var(--fuente-tamano-mediano);
+}
+
+.customers .customers-texto .texto-abajo p {
+    line-height: 2;
+}
+
+
+/*...... Botones ......*/
+
+.customers .customers-botones {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-grande) 100px;
+}
+
+.customers .customers-botones .boton-izquierdo {
+    border-radius: 50%;
+    border: 2px solid var(--color-morado);
+    width: 50px;
+    height: 50px;
+}
+
+.customers .customers-botones .boton-izquierdo:hover {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-width: 3px;
+}
+
+.customers .customers-botones .boton-izquierdo img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    rotate: 270deg;
+    filter: sepia(100%) saturate(300%) hue-rotate(266deg); 
+}
+
+.customers .customers-botones .boton-derecho {
+    border-radius: 50%;
+    border: 2px solid var(--color-morado);
+    width: 50px;
+    height: 50px;
+}
+
+.customers .customers-botones .boton-derecho:hover {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-width: 3px;
+}
+
+
+.customers .customers-botones .boton-derecho img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    rotate: 90deg;
+    filter: sepia(100%) saturate(300%) hue-rotate(266deg); 
+}
+
+/*...... Imágenes ......*/
+
+.customers .customers-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--padding-pequeno) 100px;
+}
+
+.customers .customers-imagenes .imagenes-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 240px;
+}
+
+.customers .customers-imagenes .imagenes-container .imagen-persona {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.customers .customers-imagenes .imagenes-container .imagen-persona img{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--color-morado);
+}
+.customers .customers-imagenes .imagenes-container .imagen-persona-seleccionada {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.customers .customers-imagenes .imagenes-container .imagen-persona-seleccionada img{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--color-principal);
+}
+
+.customers .customers-imagenes .imagenes-container .estrellas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-top: var(--fuente-tamano-pequeno);
+}
+
+.customers .customers-imagenes .imagenes-container .estrellas-container .estrellas {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.customers .customers-imagenes .imagenes-container .estrellas-container .estrellas img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    filter: sepia(100%) saturate(500%) hue-rotate(20deg);
+}
+
+.customers .customers-imagenes .imagenes-container .nombre {
+    display: inline-block;
+    font-size: var(--fuente-tamano-mediano);
+    color: var(--color-terciario);
+}
+
+.customers .customers-imagenes .imagenes-container .cargo {
+    display: inline;
+    font-size: var(--fuente-tamano-pequeno);
+    color: var(--color-terciario);
+    font-weight: 500;
+    line-height: 0px;
+}
+
+.customers .customers-imagenes .imagenes-container .nombre-seleccionado {
+    display: inline-block;
+    font-size: var(--fuente-tamano-mediano);
+    color: hsl(280, 78%, 27%);
+    font-weight: 800;
+}
+
+.customers .customers-imagenes .imagenes-container .cargo-seleccionado {
+    display: inline-block;
+    font-size: var(--fuente-tamano-pequeno);
+    line-height: 0px;
+}
 
 
 /*Estilos para developmentApproach*/
