@@ -1,7 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* *{border: 1px solid red} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
     --fuente-principal: 'Inter', monospace;
+    --color-principal: #000000;
+    --color-secundario: hsl(216, 2%, 60%);
+    --color-terciario: hsl(214, 11%, 42%);
+    --color-morado: hsl(266, 63%, 39%);
+    --fuente-tamano-pequeno: 15px;
+    --fuente-tamano-mediano: 18px;
+    --fuente-tamano-grande: 24px;
+    --fuente-tamano-xxl: 40px;
+    --padding-pequeno: 5px;
+    --padding-mediano: 10px;
+    --padding-grande: 20px; 
+    --dimension-redondeado: 5px;
+    --margin: 20px;
     --fuente-texto-cajas: 14px;
     --fuente-titulos-cajas: 20px;
     --fuente-weight-normal: 400;
@@ -9,10 +24,347 @@
     --color-fuente-cajas: hsl(0, 0%, 45%);
 }
 
+
 /*Estilos para la barra de navegación*/
+header {
+    font-family: var(--fuente-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-pequeno) var(--padding-mediano);
+    box-shadow: 0px 0px 10px hsl(0, 0%, 80%); 
+}
+
+header h1 {
+    color: var(--color-principal);
+    font-size: var(--fuente-tamano-grande);
+    font-weight: 400;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--fuente-tamano-pequeno);
+    /* font-weight: 400; */
+}
+
+header ul li a:hover {
+    font-size: var(--fuente-tamano-mediano);
+    font-weight: bolder;
+}
+
+header div {
+    height: 40px;
+    width: 120px;
+    border-radius: var(--dimension-redondeado);
+    background-color: var(--color-morado);
+    text-align: center;
+    align-content: center;
+}
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+    font-size: var(--fuente-tamano-pequeno);
+    display: block;
+    width: auto;
+    height: 100%;
+    line-height: 40px;
+}
+
+.contacto:hover {
+    font-weight: bolder;
+    background: hsl(266, 71%, 54%);
+    cursor: pointer;
+}
 
 
 /*Estilos para la intro y customers*/
+
+/*--------------INTRO--------------*/
+
+.intro {
+    padding: var(--padding-grande) 0px;
+    font-family: var(--fuente-principal);
+}
+
+.intro .intro-contenedor {
+    padding-top: 100px; 
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro .intro-contenedor .texto {
+    padding-left: 150px;
+}
+
+.intro .intro-contenedor .texto-arriba {
+    padding-bottom: var(--padding-grande); 
+}
+
+.intro .intro-contenedor .texto-principal {
+    margin-bottom: 5px; 
+    margin-top: 0px;
+}
+
+.intro .intro-contenedor .texto-principal span {
+    margin-bottom: 5px; 
+    margin-top: 0px;
+}
+
+.intro .intro-contenedor .texto-principal {
+    font-size: var(--fuente-tamano-xxl);
+    color: var(--color-principal);
+    font-weight: 200;
+}
+.intro .intro-contenedor .texto-principal .texto-color {
+    color: var(--color-morado);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.intro .intro-contenedor .texto-principal .texto-negrita {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.intro .intro-contenedor .texto-abajo {
+    padding-bottom: var(--padding-grande); 
+}
+
+.intro .intro-contenedor .texto-abajo p {
+    color: var(--color-terciario);
+}
+
+.intro .intro-contenedor .boton {
+    margin-top: var(--margin);
+    padding: var(--padding-pequeno) var(--padding-grande);
+    height: 45px;
+    width: 160px;
+    background-color: hsl(224, 76%, 56%);
+    border-radius: var(--dimension-redondeado);
+    text-align: center;
+    align-content: center;
+}
+
+.intro .intro-contenedor .boton {
+    background-color: hsl(224, 76%, 66%);
+    cursor: pointer;
+}
+
+.intro .intro-contenedor .boton a{
+    display: flow-root;
+    line-height: 40px;
+    font-size: var(--fuente-tamano-pequeno);
+    color: white;
+    text-decoration: none;
+}
+
+.intro .intro-contenedor .boton:hover {
+    background-color: hsl(224, 76%, 46%);
+    font-weight: bold;
+}
+
+.intro .intro-contenedor .imagen {
+    width: 600px;
+    height: 400px;
+    padding-right: 150px;
+}
+
+.intro .intro-contenedor .imagen img {
+    width: auto;
+    height: 100%;
+}
+
+/*--------------CUSTOMERS--------------*/
+
+.customers {
+    padding-top: 200px;
+    font-family: var(--fuente-principal);
+}
+
+/*...... Texto ......*/
+
+.customers .customers-texto {
+    text-align: center;
+}
+
+.customers .customers-texto .texto-arriba {
+    font-size: var(--fuente-tamano-xxl);
+    padding-bottom: var(--padding-grande);
+}
+
+.customers .customers-texto .texto-arriba p {
+    margin-bottom: 15px; 
+    margin-top: 0px;
+}
+
+.customers .customers-texto .texto-arriba .texto-negrita{
+    font-weight: bold;
+}
+
+.customers .customers-texto .texto-abajo {
+    color: var(--color-terciario);
+    font-size: var(--fuente-tamano-mediano);
+}
+
+.customers .customers-texto .texto-abajo p {
+    line-height: 2;
+}
+
+
+/*...... Botones ......*/
+
+.customers .customers-botones {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-grande) 100px;
+}
+
+.customers .customers-botones .boton-izquierdo {
+    border-radius: 50%;
+    border: 2px solid var(--color-morado);
+    width: 50px;
+    height: 50px;
+}
+
+.customers .customers-botones .boton-izquierdo:hover {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-width: 3px;
+}
+
+.customers .customers-botones .boton-izquierdo img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    rotate: 270deg;
+    filter: sepia(100%) saturate(300%) hue-rotate(266deg); 
+}
+
+.customers .customers-botones .boton-derecho {
+    border-radius: 50%;
+    border: 2px solid var(--color-morado);
+    width: 50px;
+    height: 50px;
+}
+
+.customers .customers-botones .boton-derecho:hover {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-width: 3px;
+}
+
+
+.customers .customers-botones .boton-derecho img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    rotate: 90deg;
+    filter: sepia(100%) saturate(300%) hue-rotate(266deg); 
+}
+
+/*...... Imágenes ......*/
+
+.customers .customers-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--padding-pequeno) 100px;
+}
+
+.customers .customers-imagenes .imagenes-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 240px;
+}
+
+.customers .customers-imagenes .imagenes-container .imagen-persona {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.customers .customers-imagenes .imagenes-container .imagen-persona img{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--color-morado);
+}
+.customers .customers-imagenes .imagenes-container .imagen-persona-seleccionada {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.customers .customers-imagenes .imagenes-container .imagen-persona-seleccionada img{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--color-principal);
+}
+
+.customers .customers-imagenes .imagenes-container .estrellas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-top: var(--fuente-tamano-pequeno);
+}
+
+.customers .customers-imagenes .imagenes-container .estrellas-container .estrellas {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.customers .customers-imagenes .imagenes-container .estrellas-container .estrellas img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    filter: sepia(100%) saturate(500%) hue-rotate(20deg);
+}
+
+.customers .customers-imagenes .imagenes-container .nombre {
+    display: inline-block;
+    font-size: var(--fuente-tamano-mediano);
+    color: var(--color-terciario);
+}
+
+.customers .customers-imagenes .imagenes-container .cargo {
+    display: inline;
+    font-size: var(--fuente-tamano-pequeno);
+    color: var(--color-terciario);
+    font-weight: 500;
+    line-height: 0px;
+}
+
+.customers .customers-imagenes .imagenes-container .nombre-seleccionado {
+    display: inline-block;
+    font-size: var(--fuente-tamano-mediano);
+    color: hsl(280, 78%, 27%);
+    font-weight: 800;
+}
+
+.customers .customers-imagenes .imagenes-container .cargo-seleccionado {
+    display: inline-block;
+    font-size: var(--fuente-tamano-pequeno);
+    line-height: 0px;
+}
 
 
 /*Estilos para developmentApproach*/
