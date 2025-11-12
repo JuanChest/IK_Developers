@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
+    --color-footer: hsl(240, 23%, 97%);
     --fuente-principal: 'Inter', monospace;
     --color-principal: #000000;
     --color-secundario: hsl(216, 2%, 60%);
     --color-terciario: hsl(214, 11%, 42%);
     --color-morado: hsl(266, 63%, 39%);
-    --fuente-tamano-pequeno: 15px;
+    --fuente-tamano-muy-pequeno: 14px;
+    --fuente-tamano-pequeno: 16px;
     --fuente-tamano-mediano: 18px;
     --fuente-tamano-grande: 24px;
     --fuente-tamano-xxl: 40px;
@@ -22,7 +24,11 @@
     --fuente-weight-normal: 400;
     --color-seccion-approach: hsl(240, 25%, 97%);
     --color-fuente-cajas: hsl(0, 0%, 45%);
+
+
 }
+
+
 
 
 /*Estilos para la barra de navegación*/
@@ -445,4 +451,174 @@ body {
 
 /* {border: 1px solid red;}*/
 
-/*Estilos para resources y footer*/
+
+
+
+/*Estilos para resources*/
+
+/*...... Texto ......*/
+.resources {
+    padding-top: 200px;
+    font-family: var(--fuente-principal);
+}
+
+.resources .resources-texto {
+    text-align: center;
+}
+
+.resources .resources-texto .texto-arriba {
+    font-size: var(--fuente-tamano-xxl);
+    padding-bottom: var(--padding-grande);
+}
+
+.resources .resources-texto .texto-arriba p {
+    margin-bottom: 15px; 
+    margin-top: 0px;
+}
+
+.resources .resources-texto .texto-arriba .texto-negrita{
+    font-weight: bold;
+}
+
+.resources .resources-texto .texto-abajo {
+    color: var(--color-terciario);
+    font-size: var(--fuente-tamano-mediano);
+}
+
+.resources .resources-texto .texto-abajo p {
+    line-height: 2;
+}
+
+/*...... Imágenes ......*/
+
+.imagenes-resources{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.resources .imagenes-resources {
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;}
+
+.resources .imagenes-resources .contenedor-imagenes {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    box-sizing: border-box;
+    width: clamp(180px, 22vw, 254px);
+}
+
+.resources .imagenes-resources .contenedor-imagenes img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 254 / 175;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.resources .imagenes-resources .contenedor-imagenes .contenido {
+    font-size: var(--fuente-tamano-mediano);
+    color: #2D3748;
+    font-weight: 500;
+}
+
+.resources .imagenes-resources .contenedor-imagenes .hipervínculo {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 10px;
+    font-size: var(--fuente-tamano-pequeno);
+    color: hsl(282, 100%, 24%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resources .imagenes-resources .contenedor-imagenes .hipervínculo:hover {
+    text-decoration: underline;
+}
+
+.resources .imagenes-resources .contenedor-imagenes .hipervínculo p {
+    margin: 5px;
+}
+
+/*...... Footer ......*/
+footer {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    font-family: var(--fuente-principal);
+    box-sizing: border-box;
+    background-color: #F9F5FB;
+    border: 1px solid #E7DAED;
+    padding: 50px 80px;
+    gap: 60px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 20px 0;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.social-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    
+}
+
+#copyright {
+    font-family: var(--fuente-principal);
+    text-align: center;
+    background-color: white;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10PX;
+}
