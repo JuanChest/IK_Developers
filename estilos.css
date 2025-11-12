@@ -458,7 +458,8 @@ body {
 
 /*...... Texto ......*/
 .resources {
-    padding-top: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: var(--fuente-principal);
 }
 
